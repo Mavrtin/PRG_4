@@ -88,3 +88,4 @@ if($nalezen) {
 } else {
     echo "Nebyl nalezen žádný záznam!";
 }
+
