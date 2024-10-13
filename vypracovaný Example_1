@@ -1,0 +1,64 @@
+// #1 - Násobky
+
+$zaklad = 7;
+$max = 30;
+for ($i = $zaklad; $i <= $max; $i += $zaklad) {
+    echo $i . ", ";
+}
+
+
+// #2 - Součet čísel
+
+$max = 9;
+$soucet = 0;
+for ($i = 1; $i <= $max; $i++) {
+    $soucet += $i;
+}
+echo("Vysledek: " . $soucet);
+
+
+// #3 - Dělitelnost do 10 
+
+$vstup = 18;
+for ($i = 1; $i <= 10; $i++) {
+    if ($vstup % $i == 0) {
+        echo "Je dělitelné " . $i . "<br>";
+    } else {
+        echo "Není dělitelné " . $i . "<br>";
+    }
+}
+
+
+// OPRAVOVAČKA
+
+// #1 - Odpočítávání
+
+for ($pocitadlo = 10; $pocitadlo > 0; $pocitadlo--) {
+    echo $pocitadlo . " ";
+}
+
+
+// #2 - Faktoriál čísla
+
+$vstup = 5;
+$vysledek = 1;
+for ($i = 1; $i <= $vstup; $i++) { 
+    $vysledek *= $i;
+}
+echo("$vstup! = " . $vysledek);
+
+
+// #3 - Lichá a Suchá
+
+$soucetLich = 0;
+$soucetSud = 0;
+for ($i = 1; $i <= 10; $i++) {
+    if ($i % 2 == 1) {
+        $soucetLich += $i;
+    } else {
+        $soucetSud += $i;
+    }
+}
+echo("<br> Součet lichých čísel je: " . $soucetLich);
+echo("<br> Součet sudých čísel je: " . $soucetSud);
+
